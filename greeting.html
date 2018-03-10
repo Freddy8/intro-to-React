@@ -6,7 +6,7 @@
 
   <body>
 
-    <div id="app"></div>
+    <div id="app"></div><div id="pap"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.1.0/umd/react.development.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.1.0/umd/react-dom.development.js"></script>
@@ -25,6 +25,22 @@
 
         ReactDOM.render(
           <Greeting />, document.getElementById('app')
+        );
+      </script>
+
+      <script type="text/babel">
+        class Bye extends React.Component {
+          render() {
+            return (
+              <div>
+                <h1>Bye World!</h1>
+              </div>
+            );
+          }
+        }
+
+        ReactDOM.render(
+          <Bye />, document.getElementById('pap')
         );
       </script>
   </body>
